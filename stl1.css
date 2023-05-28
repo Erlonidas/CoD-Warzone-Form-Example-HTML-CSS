@@ -1,0 +1,88 @@
+body {
+    margin: none;
+   background-image: url('imagens/4k-uhd-aside.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ /*   background-position: center; */
+    color: rgb(0,0,0);
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+p {
+    font-size: 1.15em;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    /* margin-bottom: 10px; */
+    margin: 0 0 10px 0;
+}
+
+fieldset label {
+    margin: 5px auto;
+    max-width: 800px;
+}
+
+form {
+    width: 60vw;
+    margin: 0 auto;
+    background-color: rgba(164, 238, 159, 0.571);
+    box-shadow: 1px 1px 8px 5px white;
+    border-radius: 10px;
+    padding: 0 15px 15px 15px;
+
+}
+
+div {
+    background-color: rgba(164, 238, 159, 0.571);
+    text-align: center;
+    padding: 0 5px;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    margin: 5px;  
+    max-width: 800px;
+    height: 2em;
+}
+
+.inline {
+    width: unset;
+    display: inline;
+    vertical-align: middle;
+}
+
+.margem_in_dropdown {
+    margin: 5px auto;
+    max-width: 800px;
+}
+
+fieldset {
+    border: none;
+    margin: none;
+}
+
+input[type="submit"] {
+    
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.1rem;
+    font-weight: bold; 
+    border-radius: 5px;
+    background-color:rgba(241, 245, 240, 0.973)
+
+}
+
+textarea {
+    margin: 10px auto;
+    height: 5em;
+}

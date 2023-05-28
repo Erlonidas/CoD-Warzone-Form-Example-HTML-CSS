@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="stl1.css"/>
+        <title>cod-wz2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Tipos Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+        <!---------------------->
+    </head>
+    <body>
+        <div class="negrito">
+            <h1 id="title">Call of Duty: Warzone 2 Survey/Coments</h1>
+            <p id="description">
+                <i>
+                    Form dedicated to the Cod community. We recognize your dissatisfaction
+                    and our mission is to make your voice heard by the technical team and management
+                    by Activision and Co.
+                </i>
+            </p>
+        </div>
+        <!-- INFORMAÇÕES DE USUÁRIO. Form sem o atributo action por falta de servidor adequado para armazenar dados-->
+        <form id="survey-form" class="negrito">
+            <fieldset>
+                <label for="name" id="name-label" >Name: <input type="text" name="nome-sobrenome" placeholder="Nome Completo..."  id="name" required/></label>
+                <label for="email" id="email-label"  >Your Gmail: <input type="email" name="email" placeholder="conta gmail"  id="email" pattern=".+@gmail\.com" required/></label>
+                <label for="number" id="number-label" >Age: <input type="number" name="idade" placeholder="Informe sua idade"   id="number" min="10" max="55"/></label>
+            </fieldset>
+            <!-- Formulário Inicio com dropdown -->
+            <fieldset>
+                <p>Whats your relation in Warzone comunity?</p>
+                <select class="margem_in_dropdown" id="dropdown">
+                    <option value="">(choose one)</option>
+                    <option value="low-profile">None. Im a newbie in this game. Is there a comunity?lol</option>
+                    <option value="middle-profile">Has a few months playing it. I started with WZ2</option>
+                    <option value="undergraduate-profile">Almost a year playing. when i start understanding Caldeira WZ2 took place</option>
+                    <option value="active-profile">More than a year. Verdansk was my first map</option>
+                    <option value="tryhard-profile">Mastered all maps. Playing everyday, whatching others pro player and recording my own matches !</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <!--Radion butt-->
+                <p>How long time you usually play WZ2?</p>
+                <label for="allday"><input type="radio" name="frequencia" value="allday" class="inline" /> Everyday. My game is kill boys, make them suffer haha !</label>
+                <label for="more-or-less"><input type="radio" name="frequencia" value="more-or-less" class="inline"/> Sometimes, when i dont have nothing else to do</label>
+                <label for="no-more"><input type="radio" name="frequencia" value="no-more" class="inline"/> Nah. Used a lot, now i wait for smt better</label>
+                <label for="forced-to"><input type="radio" name="frequencia" value="forced-to" required class="inline" /> Im a youtuber, so i HAVE to play it -__- </label>
+                <label for="adictive-to"><input type="radio" name="frequencia" value="adicitve-to"  class="inline"/> Im a youtuber and for me its a pleasure play everyday </label>
+            </fieldset>
+            <fieldset>
+                <!--Checkboxes multipla escolha-->
+                <p>Now its your moment. These are the top-tier comments about WZ2. Do you agree? Let us know:</p>
+                <p>Each item has points of value, thats to quantify your hateness about how the game has been driven so far...</p>
+                <label for="c1"><input type='checkbox' id='c1' value="6" class="inline"/> Promises about DD and Sliding did not bring about practical changes in the game (6)</label>
+                <label for="c2"><input type='checkbox' id='c2' value="6" class="inline"/> Activision's disinterest with the interests of pro players (6)</label>
+                <label for="c3"><input type='checkbox' id='c3' value="9" class="inline"/> Mouse keyboard does not have aim assist and the very difficulty of visual retreat (9)</label>
+                <label for="c4"><input type='checkbox' id='c4' value="4" class="inline"/> Spectator mode remains the same as WZ1 (4)</label>
+                <label for="c5"><input type='checkbox' id='c5' value="10" class="inline"/> Lack of nexus in enabling ranked matches and keeping movement of try hard players limited (10)</label>
+                <label for="c6"><input type='checkbox' id='c6' value="10" class="inline"/> Dolphin diving does not allow falling shooting (10)</label>
+                <label for="c7"><input type='checkbox' id='c7' value="3" class="inline"/> Servidors face problems yet with number of players at same map (3)</label>
+                <label for="c8"><input type='checkbox' id='c8' value="7" class="inline"/> Too much time waist by exchanging weapon from enemy downed (7)</label>
+                <label for="c9"><input type='checkbox' id='c9' value="10" class="inline"/> Company concerns with battle pass (10)</label>
+            </fieldset>
+            <!--caixa de texto (comentarios)-->
+            <fieldset>
+                <p>Do you have more to say? Let us know:</p>
+                <label for="caixa-texto">
+                    <textarea id="caixa-texto" placeholder="What did we foget to mention? Write it down here..." cols="30" rows="3"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+    </body>
+</html>
